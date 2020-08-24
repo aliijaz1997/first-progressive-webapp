@@ -12,6 +12,8 @@ function App() {
    return messaging.getToken()
  }).then((token) => {
    console.log('the token is = ', token)
+   alert( token);
+   prompt("The toke is ",token);
  }) 
   // messaging.getToken((token) => {
   //   console.log(token);
