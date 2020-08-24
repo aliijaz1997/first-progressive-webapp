@@ -1,3 +1,4 @@
+
 // to be noted that when I was pushing this to github I used orgin instead of origin
 import React from 'react';
 import './App.css';
@@ -9,9 +10,10 @@ function App() {
   // console.log(messaging);
  messaging.requestPermission().then(() => {
    return messaging.getToken()
- }).then((uniquetoken) => {
-   console.log('the token is = ', uniquetoken)
- })
+ }).then((token) => {
+   console.log('the token is = ', token)
+ }) 
+  // console.log({initNotification});
   return (
     <div className="App">
       Hello World
